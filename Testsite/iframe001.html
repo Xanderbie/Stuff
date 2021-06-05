@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="eng-US">
+
+<head>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<title>IFrame Practice</title>
+
+<style>
+.h1 { background-color: black; color: white; border:3px solid red; }
+
+</style
+
+</head>
+
+<body>
+
+<!-- IFrame Header -->
+
+<div class="h1">
+
+<h1> Testing out some Iframes </h1>
+
+</div>
+
+<!--Java Time Button -->
+
+<h2> My First Javascript</h2>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.
+</button>
+<p id="demo"></p>
+
+<!-- Java <p> using elemnt ID -->
+
+<p id="Java"></p>
+
+<script>
+document.getElementById("Java").innerHTML = "Using Javascript to convert HTML element!";
+</script>
+
+<!-- Java button that swaps text -->
+
+<button type="button" onclick="swaptext()">Click for Kicks!</button>
+<p id="change"> Punches! </p>
+<script>
+function swaptext() { document.getElementById("change").innerHTML = "Kicks!";}
+</script>
+
+<!-- Java button to change style -->
+
+<button type="button" onclick="swap()">Swap that Style!</button>
+
+<p id="colorswap"> Using Java to swap the style of a paragraph! </p>
+<script>
+function swap() {
+	document.getElementById("colorswap").style.fontSize = "25px";
+	document.getElementById("colorswap").style.color = "white";
+	document.getElementById("colorswap").style.backgroundColor = "black";
+	document.getElementById("colorswap").style.textAlign = "center";
+	document.getElementById("colorswap").style.textShadow = "4px 1px 3px red";
+}
+</script>
+
+<!-- Java to swap an img with a button -->
+
+<p>
+<button type="button" onclick="light(1)">Picture 1</button>
+<button type="button" onclick="light(0)">Picture 2</button>
+</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "Media/1314908.png"
+  } else {
+    pic = "Media/1402690.png"
+  }
+  document.getElementById('myImage').src = pic;
+  document.getElementById('myImage').style.border = "3px solid black";
+}
+</script>
+
+<img id="myImage" src="Media/1314908.png" width="500" height="400"><br>
+
+<video width="640" height="480" controls>
+  <source src="Media/rathiandunk.mp4" type="video/mp4"
+</video>
+
+</body>
+
+</html>
